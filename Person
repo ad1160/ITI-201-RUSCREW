@@ -1,0 +1,7 @@
+public class person extends 
+
+  Private String type;
+  Player player = new player;
+  
+  System.out.println("
+  }
