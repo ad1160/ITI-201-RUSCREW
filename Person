@@ -2,7 +2,15 @@ public class person
 
   Private String type;
   Player player = new player;
+  //include setters and getters in code do tonight
+  
+  public String getHealth () {
+  return Health }
+  
   
   System.out.println("You are standing in front of Brower")
   System.out.println("Your stomach is aching from the butterfly of standing front of your first Rutgers Class!")
+  System.out.println("You eat once at Brower, and your self-esteem is already low!")
+  System.out.println("You are standing in front of the records room ")
+  
   }
