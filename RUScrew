@@ -1,0 +1,21 @@
+import java.util.Random;
+
+public class ruscrew {
+
+	public static void main(String[] args) {
+		
+		Random rand= new Random(); 
+		
+		int rand_int = rand.nextInt(21);
+
+		int newnum = rand_int%2;
+		
+		if (newnum==0) {
+			System.out.println("You've been RUSCREWED");
+		}
+		else {
+			System.out.println("Congrats, You've avoided the RUSCREW");
+	}
+
+}
+}
