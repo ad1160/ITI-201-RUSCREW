@@ -8,7 +8,9 @@ public class Room {
 	
 	
 	public Room() {
-		
+		this.descr = "Room";
+		this.size.length = 0;
+		this.size[0].length = 0;
 	}
 
 }
