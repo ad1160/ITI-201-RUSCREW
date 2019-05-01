@@ -1,7 +1,8 @@
-public class person extends 
+public class person 
 
   Private String type;
   Player player = new player;
   
-  System.out.println("
+  System.out.println("You are standing in front of Brower")
+  System.out.println("Your stomach is aching from the butterfly of standing front of your first Rutgers Class!")
   }
