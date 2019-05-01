@@ -20,6 +20,8 @@ public class Main {
 				+ "\nDo your best to avoid the RUSCREW and successfully navigate the campus and "
 				+ "attend all your classes.");
 		printInst();
+		
+		
 	}
 
 	// Instruction List
@@ -28,5 +30,7 @@ public class Main {
 		System.out.println(
 				"f: move forward \nl: move left \nr: move right \nb: move backward " + "\nt:take item \nu: use item");
 	}
+	
+	
 
 }
