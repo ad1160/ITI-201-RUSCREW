@@ -7,6 +7,24 @@ public class person
   public String getHealth () {
   return Health }
   
+  //System objects
+		Scanner in = new Scanner(System.in);
+		Random rand = new Random();
+		
+		//game variables 
+		String[] da = { "Late Class", "Food" } ;
+		int maxEnemyHealth = 75;
+		int enemyAttackDamage = 25;
+		
+		//Player Variables
+		int health = 100;
+		int attackDamage = 50;
+		int numHealing = 30;
+		int healingAmount = 30;
+		int healingDropChance = 50; //Percentage
+		
+		boolean running =true;
+  
   
   System.out.println("You are standing in front of Brower")
   System.out.println("Your stomach is aching from the butterfly of standing front of your first Rutgers Class!")
