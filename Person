@@ -1,4 +1,4 @@
-public class person 
+public class person extends text adventure
 
   Private String type;
   Player player = new player;
