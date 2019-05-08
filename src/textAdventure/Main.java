@@ -2,7 +2,7 @@ package textAdventure;
 
 import java.util.Scanner;
 
-public class Main {
+public class Main extends Room {
 
 	public static void main(String[] args) {
 
