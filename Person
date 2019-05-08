@@ -6,7 +6,7 @@ private String lName;
 
 public person() {
 	this.name="No Name";
-	this.lName="ksks";
+	this.lName="Freshie";
 
 }
 
