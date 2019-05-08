@@ -1,30 +1,31 @@
 public class person extends text adventure
 
-  Private String type;
-  Player player = new player;
-  //include setters and getters in code do tonight
-  
-  public String getHealth () {
-  return Health }
-  
-  //System objects
-		Scanner in = new Scanner(System.in);
-		Random rand = new Random();
-		
-		//game variables 
-		String[] da = { "Late Class", "Food" } ;
-		int maxEnemyHealth = 75;
-		int enemyAttackDamage = 25;
-		
-		//Player Variables
-		int health = 100;
-		int attackDamage = 50;
-		int numHealing = 30;
-		int healingAmount = 30;
-		int healingDropChance = 50; //Percentage
-		
-		boolean running =true;
-  
+private String name; 
+
+private String lName;
+
+public Adventurer() {
+	this.name="No Name";
+	this.lName="ksks";
+
+}
+
+public String getName() {
+	return name;
+}
+public void setName(String name) {
+	this.name = name;
+}
+public String getlName() {
+	return lName;
+}
+public void setlName(String lName) {
+	this.lName = lName;
+}
+
+
+public String toString(){
+	return ("Welcome "+ this.name + "your first day of class"+ this.lName);
   
   System.out.println("You are standing in front of Brower")
   System.out.println("Your stomach is aching from the butterfly of standing front of your first Rutgers Class!")
