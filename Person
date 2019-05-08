@@ -4,7 +4,7 @@ private String name;
 
 private String lName;
 
-public Adventurer() {
+public person() {
 	this.name="No Name";
 	this.lName="ksks";
 
