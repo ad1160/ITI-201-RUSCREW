@@ -6,7 +6,7 @@ private String lName;
 
 public person() {
 	this.name="No Name";
-	this.lName="ksks";
+	this.lName="Freshie";
 
 }
 
@@ -27,9 +27,9 @@ public void setlName(String lName) {
 public String toString(){
 	return ("Welcome "+ this.name + "your first day of class"+ this.lName);
   
-  System.out.println("You are standing in front of Brower")
-  System.out.println("Your stomach is aching from the butterfly of standing front of your first Rutgers Class!")
-  System.out.println("You eat once at Brower, and your self-esteem is already low!")
-  System.out.println("You are standing in front of the records room ")
+  //System.out.println("You are standing in front of Brower")
+  //System.out.println("Your stomach is aching from the butterfly of standing front of your first Rutgers Class!")
+ // System.out.println("You eat once at Brower, and your self-esteem is already low!")
+ //System.out.println("You are standing in front of the records room ")
   
   }
