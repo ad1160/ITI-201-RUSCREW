@@ -17,17 +17,37 @@ public class Main extends Room {
 				+ "\nDo your best to avoid the RUSCREW and successfully navigate the campus and "
 				+ "attend all your classes.");
 		printInst();
-		
-		
+		System.out.println("If you forget the instructions, press 'p'");
+		System.out.println("You are currently in the Student Center");
+
+		Room game1 = new Room();
+		game1.createMap();
+		// game1.printMap();
+		char direction;
+		String placeholder;
+
+		while (game1.done == false) {
+			direction = ' ';
+			System.out.println("Where would you like to go?");
+			placeholder = scn.nextLine();
+			direction = placeholder.charAt(0);
+			if (direction == 'p') {
+				printInst();
+			}
+			if (direction == 'q') {
+				game1.done = true;
+				System.out.println("The RUSCREW has claimed another victim. You won't be the last one");
+			}
+			game1.move(direction);
+			direction = ' ';
+		}
+		scn.close();
 	}
 
 	// Instruction List
 	public static void printInst() {
 		System.out.println("Instruction list: ");
-		System.out.println(
-				"f: move forward \nl: move left \nr: move right \nb: move backward");
+		System.out.println("w: move forward \na: move left \nd: move right \ns: move backward \nq: give up");
 	}
-	
-	
 
 }
