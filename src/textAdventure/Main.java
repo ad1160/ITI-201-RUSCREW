@@ -1,6 +1,7 @@
 package textAdventure;
 
 import java.util.Scanner;
+import java.util.Random;
 
 public class Main extends Room {
 
@@ -42,7 +43,23 @@ public class Main extends Room {
 			direction = ' ';
 		}
 		scn.close();
+		
 	}
+	
+	// RUSCREW Aspect
+		public static void screw() {
+		Random rand= new Random(); 
+		int rand_int = rand.nextInt(11);
+		int newnum = rand_int%2;
+		if (newnum==0) {
+			System.out.println("Congrats, You've avoided the RUSCREW"); 
+			       }
+		else {
+			System.out.println("You've been RUSCREWED. ");
+			System.out.println("Lose self-esteem. ");  
+		     }
+
+		}
 
 	// Instruction List
 	public static void printInst() {
