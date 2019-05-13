@@ -10,11 +10,21 @@ public class Main extends Room {
 		// Implement Scanner
 		Scanner scn = new Scanner(System.in);
 		String name = "";
-
+		String lname = "";
+		
 		// Start Game
-		System.out.println("What is your name?");
+		System.out.println("What is your first name?");
 		name = scn.nextLine();
-		System.out.println("Welcome to your first day at Rutgers University, " + name + "! "
+		System.out.println("What is your last name?");
+		lname = scn.nextLine();
+		
+		Person player = new Person();
+		player.setlName(lname);
+		player.setName(name);
+		player.setEsteem(10);
+		
+		System.out.println("Welcome to your first day at Rutgers University, " + player.getName() 
+				+ player.getlName() + "! "
 				+ "\nDo your best to avoid the RUSCREW and successfully navigate the campus and "
 				+ "attend all your classes.");
 		printInst();
@@ -35,12 +45,13 @@ public class Main extends Room {
 			if (direction == 'p') {
 				printInst();
 			}
-			if (direction == 'q') {
+			if (direction == 'q' || player.getEsteem() == 0) {
 				game1.done = true;
 				System.out.println("The RUSCREW has claimed another victim. You won't be the last one");
 			}
 			game1.move(direction);
 			direction = ' ';
+			player.setEsteem(player.getEsteem()-1);
 		}
 		scn.close();
 		

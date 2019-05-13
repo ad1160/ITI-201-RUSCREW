@@ -1,13 +1,20 @@
 package textAdventure;
-
+import java.util.Scanner;
 public class Room {
 
 	private String[][] collave = new String[3][3];
 	boolean done = false;
-
+	
+	//Current Position
 	int curri = 2;
 	int currj = 1;
+	
+	//Inventory Items
+	boolean food = false;
 
+	//Scanner
+	Scanner scn = new Scanner(System.in);
+	
 	// Create a 2D array for the game map
 	public void createMap() {
 		collave[0][0] = "SCI";
@@ -34,9 +41,12 @@ public class Room {
 	public void move(char a) {
 		// Current location is Student Center
 		if (curri == 2 && currj == 1) {
-			if (a == 'w') { // Player moves up
+			if (a == 'w' && food == false) { // Player moves up
 				curri = 1;
 				System.out.println("You have now entered Brower. Be careful, anything may be poision");
+				System.out.println("Do you want to pick up food (y/n)?");
+				if (scn.nextLine() == "y")
+					food = true;
 			} else if (a == 'a') { // Player moves left
 				currj = 0;
 				System.out.println("You are now in the Gym. Try not to smell anything");
@@ -58,11 +68,11 @@ public class Room {
 				curri = 1;
 				System.out.println("You are on a Crosswalk. Avoid all vehicles");
 			}
-		} else if (curri == 0 && currj == 1) { // Current location is Records Hall
+		} else if (curri == 0 && currj == 1) { // Current location is Records
+												// Hall
 			if (a == 'w') { // Player moves up
 				System.out
-						.println("You do not want to go that way, as the dorms there have a cockroach" 
-								+ "infestation");
+						.println("You do not want to go that way, as the dorms there have a cockroach" + "infestation");
 			} else if (a == 'a') { // Player moves left
 				currj = 0;
 				System.out.println("You are in the glorious SCI building. Apply for it when you can");
@@ -74,23 +84,23 @@ public class Room {
 				curri = 1;
 				System.out.println("You have now entered Brower. Be careful, anything may be poision");
 			}
-		} else if (curri == 0 && currj == 2) { // Current location is Honors College
+		} else if (curri == 0 && currj == 2) { // Current location is Honors
+												// College
 			if (a == 'w') { // Player moves up
-				System.out.println("You do not want to go that way, as the dorms there have a cockroach" 
-						+ "infestation");
+				System.out
+						.println("You do not want to go that way, as the dorms there have a cockroach" + "infestation");
 			} else if (a == 'a') { // Player moves left
 				currj = 1;
 				System.out.println("You have now entered Records Hall. Be ready for a long line");
 			} else if (a == 'd') { // Player moves right
-				System.out.println("You see the train station in the distance. Sadly, you cannot escape"
-						+ "College Ave that way");
+				System.out.println(
+						"You see the train station in the distance. Sadly, you cannot escape" + "College Ave that way");
 			} else if (a == 's') { // Player moves down
 				curri = 1;
 				System.out.println("You are now in the Academic Building. If you are an econ major,"
 						+ "all your classes will be in the same 2 classrooms here");
 			}
-		}
-		else if (curri == 1 && currj == 0) { //Current location is Crosswalk
+		} else if (curri == 1 && currj == 0) { // Current location is Crosswalk
 			if (a == 'w') { // Player moves up
 				curri = 0;
 				System.out.println("You are in the glorious SCI building. Apply for it when you can");
@@ -103,8 +113,7 @@ public class Room {
 				curri = 2;
 				System.out.println("You are now in the Gym. Try not to smell anything");
 			}
-		}
-		else if (curri == 1 && currj == 1) { //Current location is Brower
+		} else if (curri == 1 && currj == 1) { // Current location is Brower
 			if (a == 'w') { // Player moves up
 				curri = 0;
 				System.out.println("You have now entered Records Hall. Be ready for a long line");
@@ -119,8 +128,8 @@ public class Room {
 				curri = 2;
 				System.out.println("You are now in the Student Center. Eat here to avoid Brower");
 			}
-		}
-		else if (curri == 1 && currj == 2) { //Current location is Academic Building
+		} else if (curri == 1 && currj == 2) { // Current location is Academic
+												// Building
 			if (a == 'w') { // Player moves up
 				curri = 0;
 				System.out.println("You are in your overpriced dorm, the Honors College. "
@@ -135,8 +144,7 @@ public class Room {
 				System.out.println("You see the Yard in the distance. Sadly, that building is too exclusive "
 						+ "for a pleb such as yourself");
 			}
-		}
-		else if (curri == 2 && currj == 0) { //Current location is Gym
+		} else if (curri == 2 && currj == 0) { // Current location is Gym
 			if (a == 'w') { // Player moves up
 				curri = 1;
 				System.out.println("You are on a Crosswalk. Avoid all vehicles");
