@@ -47,9 +47,12 @@ public class Room {
 				System.out.println("Do you want to pick up food (y/n)?");
 				if (scn.nextLine() == "y")
 					food = true;
-			} else if (a == 'a') { // Player moves left
+			} else if (a == 'a'&& water == false) { // Player moves left
 				currj = 0;
 				System.out.println("You are now in the Gym. Try not to smell anything");
+				System.out.println("Do you want to pick up water (y/n)?");
+				if (scn.nextLine() == "y")
+					water = true;
 			} else if (a == 'd') { // Player moves right
 				System.out.println("You see the Yard in the distance. Sadly, that building is too exclusive "
 						+ "for a pleb such as yourself");
