@@ -21,15 +21,15 @@ public class Main extends Room {
 		Person player = new Person();
 		player.setlName(lname);
 		player.setName(name);
-		player.setEsteem(10);
+		player.setEsteem(20);
 		
 		System.out.println("Welcome to your first day at Rutgers University, " + player.getName() 
-				+ player.getlName() + "! "
+				+ " " + player.getlName() + "! "
 				+ "\nDo your best to avoid the RUSCREW and successfully navigate the campus and "
 				+ "attend all your classes.");
 		printInst();
 		System.out.println("If you forget the instructions, press 'p'");
-		System.out.println("You are currently in the Student Center");
+		System.out.println("You are currently in the Student Center.");
 
 		Room game1 = new Room();
 		game1.createMap();
@@ -48,6 +48,7 @@ public class Main extends Room {
 			if (direction == 'q' || player.getEsteem() == 0) {
 				game1.done = true;
 				System.out.println("The RUSCREW has claimed another victim. You won't be the last one");
+				break;
 			}
 			game1.move(direction);
 			direction = ' ';

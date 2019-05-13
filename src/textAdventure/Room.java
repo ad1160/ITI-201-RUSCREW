@@ -72,7 +72,7 @@ public class Room {
 												// Hall
 			if (a == 'w') { // Player moves up
 				System.out
-						.println("You do not want to go that way, as the dorms there have a cockroach" + "infestation");
+						.println("You do not want to go that way, as the dorms there have a cockroach " + "infestation");
 			} else if (a == 'a') { // Player moves left
 				currj = 0;
 				System.out.println("You are in the glorious SCI building. Apply for it when you can");
@@ -88,13 +88,13 @@ public class Room {
 												// College
 			if (a == 'w') { // Player moves up
 				System.out
-						.println("You do not want to go that way, as the dorms there have a cockroach" + "infestation");
+						.println("You do not want to go that way, as the dorms there have a cockroach " + "infestation");
 			} else if (a == 'a') { // Player moves left
 				currj = 1;
 				System.out.println("You have now entered Records Hall. Be ready for a long line");
 			} else if (a == 'd') { // Player moves right
 				System.out.println(
-						"You see the train station in the distance. Sadly, you cannot escape" + "College Ave that way");
+						"You see the train station in the distance. Sadly, you cannot escape " + "College Ave that way");
 			} else if (a == 's') { // Player moves down
 				curri = 1;
 				System.out.println("You are now in the Academic Building. If you are an econ major,"
