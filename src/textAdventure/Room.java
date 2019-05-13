@@ -11,19 +11,19 @@ public class Room {
 	
 	//Inventory Items
 	boolean food = false;
-	boolean water = true;
-	boolean lottery = true;
-	boolean lyft = true;
-	boolean check = true;
+	boolean water = false;
+	boolean lottery = false;
+	boolean lyft = false;
+	boolean check = false;
 	boolean app = false;
-	boolean crosswalk = true;
-	boolean quarter = true;
-	boolean piano = true;
-	boolean snack = true;
-	boolean cockroach = true;
-	boolean wendy = true;
-	boolean gate = true;
-	boolean flyer = true;
+	boolean crosswalk = false;
+	boolean quarter = false;
+	boolean piano = false;
+	boolean snack = false;
+	boolean cockroach = false;
+	boolean wendy = false;
+	boolean gate = false;
+	boolean flyer = false;
 
 	//Scanner
 	Scanner scn = new Scanner(System.in);
