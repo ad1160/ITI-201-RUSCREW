@@ -56,6 +56,8 @@ public class Main extends Room {
 		}
 		scn.close();
 		
+		System.out.println("Game over. You have " + game1.totalPoints() + " points.");
+		
 	}
 	
 	// RUSCREW Aspect
@@ -78,5 +80,6 @@ public class Main extends Room {
 		System.out.println("Instruction list: ");
 		System.out.println("w: move forward \na: move left \nd: move right \ns: move backward \nq: give up");
 	}
+	
 
 }
