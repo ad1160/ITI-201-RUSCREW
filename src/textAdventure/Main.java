@@ -29,7 +29,7 @@ public class Main extends Room {
 						+ "attend all your classes.");
 		printInst();
 		System.out.println("If you forget the instructions, press 'p'");
-		System.out.println("You are currently in the Student Center.");
+		System.out.println("You are currently in the Student Center. There are 15 items to collect.");
 
 		Room game1 = new Room();
 		game1.createMap();
